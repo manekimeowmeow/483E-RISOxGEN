@@ -9,7 +9,6 @@ void heart(int x, int y, int heartWidth, int heartBottom, int yVert) {
   scale(15.0);
 
   // Shape
-  smooth();
   beginShape();
   vertex(x, yVert);
   bezierVertex(x, -y, x+heartWidth, y, x, heartBottom);

@@ -3,7 +3,7 @@
 /* fns:
     heart(); // https://processing.org/tutorials/pshape
     star();
-    dotPattern;
+    dots();
     
     exportPDF(); <- press a key;
     randomCol(); ??? store colors in array; create vars - gotta fix it later bc hex codes aren't working with opacity??
@@ -16,6 +16,8 @@
     3d??
     https://discourse.processing.org/t/how-to-apply-two-textures-to-the-same-pshape/5971/5
     
+    perlin noise 
+    https://forum.processing.org/one/topic/closing-this-shape-that-is-using-perlin-noise.html
 */
 
 // others: mouseDragged, mousePressed, mouseReleased,
