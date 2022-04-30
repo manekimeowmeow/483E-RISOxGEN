@@ -2,10 +2,14 @@
 // refactored
 
 void heart(int x, int y, int heartWidth, int heartBottom, int yVert) {
-  smooth();
-  noStroke();
+  // Transformations
+  fill(0, 0, 0, 3*random(20, 50));
+  rotate(random(-.55, -.25));
   translate(mouseX - width/3, mouseY - height/3);
   scale(15.0);
+
+  // Shape
+  smooth();
   beginShape();
   vertex(x, yVert);
   bezierVertex(x, -y, x+heartWidth, y, x, heartBottom);
@@ -15,6 +19,11 @@ void heart(int x, int y, int heartWidth, int heartBottom, int yVert) {
 }
 
 void star(float x, float y, float radius1, float radius2, int npoints) {
+  // Transformations
+  fill(0, 0, 0, 3*random(10, 50));
+  translate(random(20), random(20));
+
+  // Shape
   float angle = TWO_PI / npoints;
   float halfAngle = angle/2.0;
   beginShape();
@@ -29,16 +38,16 @@ void star(float x, float y, float radius1, float radius2, int npoints) {
   endShape(CLOSE);
 }
 
-
-//for (int i = 10; i < 100; i+=10) {
-//  for (int j = 10; j < 100; j+=10) {
-//    dotGrid(i*2, j*2, 10);
-//  }
-//}
 void dotGrid(int x, int y, int circSize) {
-  for (int i = x; i < 100; i+= x) {
-    for (int j = y; j < 100; j+= y) {
-      ellipse(i*2, j*2, circSize, circSize);
+  // Transformations
+  fill(0, 0, 0, 3*random(10, 50));
+  translate(mouseX+random(100, 200), mouseY-random(100, 300));
+  rotate(radians(25));
+
+  // Shapes
+  for (int i = x; i < 200; i+=x) {
+    for (int j = y; j < 200; j+=y) {
+      ellipse(i, j, circSize, circSize);
     }
   }
 }

@@ -13,5 +13,16 @@
     notes to self!!
     push/popmatrix is like a separate ps layer u can drag around and rotate & not affect anything before/after it
     
+    3d??
+    https://discourse.processing.org/t/how-to-apply-two-textures-to-the-same-pshape/5971/5
     
 */
+
+// others: mouseDragged, mousePressed, mouseReleased,
+
+// shape warping: vertex()
+
+// 170mm x 250mm => 55ppi => 368px x 542px
+// with bleed: 175mm x 260mm; 180mm if spread
+// https://pixelsconverter.com/millimeters-to-pixels
+//  size(757, 542);
