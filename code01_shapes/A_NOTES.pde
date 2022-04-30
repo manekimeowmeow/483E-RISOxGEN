@@ -9,7 +9,6 @@
     randomCoord(); <- 
     randomCol(); ??? store colors in array; create vars
     
-    rotate(); <- create 2 random vars and store duplicate as (-1) to reset rotation?
-    resetRotation();
+    rotate(); <- jk i just learned how to uncomplicate that
     
 */
