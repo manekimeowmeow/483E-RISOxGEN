@@ -3,41 +3,17 @@
 
 int circSize = 200;
 
-int y0 = 8; // vertex (x, y0);
-int x1 = 0;
-int y1 = -5;
-int x2R = x1+25;
-int x2L = x1-25;
-int y2 = 5;
-int x3 = x1;
-int y3 = 22;
-
-void drawHeart() {
+void heart(int x, int y, int heartWidth, int heartBottom, int yVert) {
   smooth();
   noStroke();
   translate(mouseX - width/3, mouseY - height/3);
   scale(15.0);
   beginShape();
-  vertex(x1, y0);
-  bezierVertex(x1, y1, x2R, y2, x3, y3);
-  vertex(x1, y0);
-  bezierVertex(x1, y1, x2L, y2, x3, y3);
-  endShape();
-
-  //stroke(0, 0, 255);
-
-  // vertex
-  //point(x1, y0);
-
-  // top point
-  //point(x1, y1);
-
-  // left and right coords
-  //point(x2R, y2);
-  //point(x2L, y2);
-
-  // bottom point
-  //point(x3, y3);
+  vertex(x, yVert);
+  bezierVertex(x, -y, x+heartWidth, y, x, heartBottom);
+  vertex(x, yVert);
+  bezierVertex(x, -y, x-heartWidth, y, x, heartBottom);
+  endShape(CLOSE);
 }
 
 void star(float x, float y, float radius1, float radius2, int npoints) {

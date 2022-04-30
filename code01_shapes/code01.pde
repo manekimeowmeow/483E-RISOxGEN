@@ -8,7 +8,6 @@
 
 void setup() {
   size(757, 542);
-  
 }
 
 void draw() {
@@ -17,23 +16,24 @@ void draw() {
 }
 
 void mouseClicked() {
-  
+
   int opacity = floor(random(10, 50));
-  
+
   fill(0, 0, 0, opacity*3);
-  
-  
-  star(mouseX + random(-50, 200), mouseY + random(-50, 200), 30, 70, 8); 
-  
+
+
+  star(mouseX + random(-10, 10), mouseY + random(-10, 10), 30, 100, 8);
+
   opacity = floor(random(20, 50));
   fill(0, 0, 0, opacity*3);
   float rotVal = random(-.55, -.25);
   println(rotVal);
   rotate(rotVal);
-  drawHeart();
+
+  heart(0, 5, 25, 22, 8);
   rotate(-rotVal);
 }
 
-// others: mouseDragged, mousePressed, mouseReleased, 
+// others: mouseDragged, mousePressed, mouseReleased,
 
 // shape warping: vertex()
