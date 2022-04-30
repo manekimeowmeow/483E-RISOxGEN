@@ -1,8 +1,6 @@
 // orig. code for heart by expdas https://forum.processing.org/one/topic/shape-heart.html
 // refactored
 
-int circSize = 200;
-
 void heart(int x, int y, int heartWidth, int heartBottom, int yVert) {
   smooth();
   noStroke();
@@ -31,6 +29,6 @@ void star(float x, float y, float radius1, float radius2, int npoints) {
   endShape(CLOSE);
 }
 
-void drawCircle() {
-  ellipse(width/3, height/3 + 200, circSize, circSize); 
+void dotGrid(int x, int y, int circSize) {
+  ellipse(x, y, circSize, circSize); 
 }

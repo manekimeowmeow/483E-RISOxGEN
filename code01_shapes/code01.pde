@@ -21,6 +21,9 @@ void mouseClicked() {
 
   fill(0, 0, 0, opacity*3);
 
+for (int i = 10; i < 100; i+=10) {
+  dotGrid(i*2, 10, 10);
+}
 
   star(mouseX + random(-10, 10), mouseY + random(-10, 10), 30, 100, 8);
 
