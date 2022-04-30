@@ -29,6 +29,16 @@ void star(float x, float y, float radius1, float radius2, int npoints) {
   endShape(CLOSE);
 }
 
+
+//for (int i = 10; i < 100; i+=10) {
+//  for (int j = 10; j < 100; j+=10) {
+//    dotGrid(i*2, j*2, 10);
+//  }
+//}
 void dotGrid(int x, int y, int circSize) {
-  ellipse(x, y, circSize, circSize); 
+  for (int i = x; i < 100; i+= x) {
+    for (int j = y; j < 100; j+= y) {
+      ellipse(i*2, j*2, circSize, circSize);
+    }
+  }
 }

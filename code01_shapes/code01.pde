@@ -19,16 +19,15 @@ void mouseClicked() {
 
   fill(0, 0, 0, opacity*3);
 
-pushMatrix();
-translate(60, 80);
-  for (int i = 10; i < 100; i+=10) {
-    for (int j = 10; j < 100; j+=10) {
-      dotGrid(i*2, j*2, 10);
-    }
-  }
-popMatrix();
+  pushMatrix();
+  translate(60, 80);
+  dotGrid(10, 10, 10);
+  popMatrix();
 
-  star(mouseX + random(-10, 10), mouseY + random(-10, 10), 30, 100, 8);
+  pushMatrix();
+  translate(random(20), random(20));
+  star(mouseX, mouseY, 30, 100, 8);
+  popMatrix();
 
   opacity = floor(random(20, 50));
   fill(0, 0, 0, opacity*3);
