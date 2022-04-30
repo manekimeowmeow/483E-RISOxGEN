@@ -1,5 +1,3 @@
-
-
 // 170mm x 250mm => 55ppi => 368px x 542px
 // with bleed: 175mm x 260mm; 180mm if spread
 // https://pixelsconverter.com/millimeters-to-pixels
@@ -21,11 +19,14 @@ void mouseClicked() {
 
   fill(0, 0, 0, opacity*3);
 
+pushMatrix();
+translate(60, 80);
   for (int i = 10; i < 100; i+=10) {
     for (int j = 10; j < 100; j+=10) {
       dotGrid(i*2, j*2, 10);
     }
   }
+popMatrix();
 
   star(mouseX + random(-10, 10), mouseY + random(-10, 10), 30, 100, 8);
 
