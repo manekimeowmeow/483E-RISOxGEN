@@ -5,8 +5,10 @@
 // https://pixelsconverter.com/millimeters-to-pixels
 int circSize = 200;
 
+
+
 void setup() {
-  size(500, 500);
+  size(368, 542);
   
 }
 
@@ -18,7 +20,6 @@ void draw() {
 
 void mouseClicked() {
   drawHeart();
-  println("hi");
 }
 
 // others: mouseDragged, mousePressed, mouseReleased, 
