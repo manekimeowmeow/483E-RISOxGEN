@@ -12,6 +12,8 @@ void draw() {
 void mouseClicked() {
   background(255);
   circles(width, height, 100);
+  lines(0, 250, 2, 100, 4, .5);
+  circles(width, height, 100);
 }
 
 void keyTyped() {
