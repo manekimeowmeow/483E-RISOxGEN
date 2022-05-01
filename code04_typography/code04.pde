@@ -1,3 +1,5 @@
+PFont f;
+
 boolean pdfToggle = false;
 
 void setup() {
