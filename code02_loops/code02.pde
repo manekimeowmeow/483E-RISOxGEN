@@ -10,6 +10,7 @@ void draw() {
 }
 
 void mouseClicked() {
+  background(255);
   circles(width, height, 100);
 }
 
