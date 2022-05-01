@@ -1,7 +1,7 @@
 boolean pdfToggle = false;
 
 void setup() {
-  size(768, 512); //(757, 542)
+  size(768, 576); //(757, 542)
   background(220);
 }
 
@@ -10,12 +10,17 @@ void draw() {
 }
 
 void mouseClicked() {
-  drawGrid(128, floor(width/72), floor(width/72), 8, 72);
+  //translate(0, 25);
+  drawGrid(96, floor(width/96), floor(width/96), 8, 96);
 }
 
 void keyTyped() {
   if (key == '1') {
     // ---- Toggle PDF recording
     keyTogglePDF();
+  }
+  
+  if (key == 'x') {
+    background(220);
   }
 }
