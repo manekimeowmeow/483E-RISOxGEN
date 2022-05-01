@@ -7,8 +7,13 @@ need: large decorative typeface w/ swashes??
 code: random letter upon click + rotate, random loc'n (push/popmatrix for each)
 code: gradient and opacity?
 
+export pdf every new character
+
 when in ps: separate layers, knockout(?) -> offset a few px
 gradient
+
+1: make sure i can type
+2: make sure 
 
 
 
