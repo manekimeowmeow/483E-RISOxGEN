@@ -4,7 +4,7 @@ void circAndLines(float x, float y, float circSize, float x1, float y1, float w,
     // Circles
     x = x - 5;
     y = y - 10;
-    strokeWeight(2);
+    strokeWeight(1);
     stroke(255);
     fill(0);
     ellipse(x, y, circSize, circSize);
