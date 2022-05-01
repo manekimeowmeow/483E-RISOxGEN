@@ -2,7 +2,7 @@ boolean pdfToggle = false;
 
 void setup() {
   size(757, 542);
-  background(#FFFFFF);
+  background(0);
 }
 
 void draw() {
@@ -10,7 +10,7 @@ void draw() {
 }
 
 void mouseClicked() {
-  background(255);
+  drawGrid(128, floor(width/128), floor(width/128), 8, 72, 36);
 }
 
 void keyTyped() {
