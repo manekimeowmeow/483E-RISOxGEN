@@ -1,6 +1,6 @@
 // basing off assignment 06 code
 
-void drawGrid(float cellSize, int cols, int rows, int minSize, int maxSize, int posn) {
+void drawGrid(float cellSize, int cols, int rows, int minSize, int maxSize) {
   cols = int(width/cellSize);
   rows = int(height/cellSize);
 
@@ -21,14 +21,14 @@ void drawGrid(float cellSize, int cols, int rows, int minSize, int maxSize, int 
       if (drawingType == 0) {
         // If 0, draw white circ + semi-transp blue dot
         fill(255);
-        ellipse(x, y + posn + random(6), random(minSize, maxSize), random(minSize, maxSize));
+        ellipse(x, y + random(6), random(minSize, maxSize), random(minSize, maxSize));
         fill(0, 0, 255, random(0, 100));
-        ellipse(x, y + posn + random(3), 25, 25);
+        ellipse(x, y + random(3), 25, 25);
       } else if (drawingType == 1) {
         // If 1, draw semi-transp blue circ
         rotate(0);
         fill(0, 0, 255, random(255));
-        ellipse(x, y + posn + random(3), random(minSize, maxSize), random(minSize, maxSize));
+        ellipse(x, y + random(3), random(minSize, maxSize), random(minSize, maxSize));
       }
     }
   }
