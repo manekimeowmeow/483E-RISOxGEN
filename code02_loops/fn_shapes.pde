@@ -1,5 +1,5 @@
 void circAndLines(float x, float y, float circSize, float x1, float y1, float w, float h, float xMultiplier, float yMultiplier) { // oh god ????
-  for (int times = 0; times < 200; times += 1) {
+  for (int times = 0; times < 190; times += 1) {
 
     // Circles
     x = x - 5;
