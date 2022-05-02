@@ -1,12 +1,17 @@
 boolean pdfToggle = false;
 float x1;
 float y1;
+int lastClick = 0;
 
 void setup() {
   size(757, 542); //(757, 542)
 }
 
 void draw() {
+  if (millis() - lastClick > 400) {
+    x1 = mouseX;
+    y1 = mouseY;
+  }
 }
 
 void mouseDragged() {
