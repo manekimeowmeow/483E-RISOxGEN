@@ -1,5 +1,5 @@
 void setFont() {
-  f = createFont("Arial", 300, true);
+  f = createFont("fonts/Basteleur-Bold.ttf", 400, true);
   textFont(f);
   textLeading(130);
 }

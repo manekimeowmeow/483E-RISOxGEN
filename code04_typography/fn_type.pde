@@ -8,11 +8,12 @@ void drawKey() {
   fill(colDkBlue, 250);
   pushMatrix();
   float angle = random(-16, 16);
+  float angle2 = random(-16, 16);
   //float angle2 = random(-25, 45);
   rotateX(PI/4);
   rotateZ(radians(angle));
-  rotateY(PI/angle);
-  translate(random(width), random(100, 400));
+  //rotateY(PI/angle2);
+  translate(mouseX, mouseY);
   text(key, x, y);
   popMatrix();
 }

@@ -16,9 +16,9 @@ gradient
 1: make sure i can type
 2: make sure 
 
-
-
-
+https://discourse.processing.org/t/export-to-pdf-will-not-render-vectors/7064/11
+https://discourse.processing.org/t/saving-a-pdf-with-p3d-or-p2d-renderer/24267/2
+https://sighack.com/post/exporting-high-resolution-images-in-processing
 */
 
 // others: mouseDragged, mousePressed, mouseReleased,
