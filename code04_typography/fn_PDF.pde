@@ -17,7 +17,7 @@ void startPDF() {
 }
 
 void stopPDF() {
-  endRecord();
+  endRaw();
   println("Ended PDF capture.");
   save("sendhelp.png");
 }

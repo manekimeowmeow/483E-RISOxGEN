@@ -9,10 +9,9 @@ float x = 30;
 float y = 100;
 
 boolean pdfToggle = false;
-boolean recordPDF = false; 
 
 void setup() {
-  size(757, 542, P3D); //(757, 542)
+  size(757, 542); //(757, 542)
   setFont();
 }
 
