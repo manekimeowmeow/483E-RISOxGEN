@@ -5,7 +5,7 @@ void drawKey() {
   //  text(words, x-i, y+i);
   //}
   // ---- Main type
-  fill(colDkBlue, 250);
+  fill(colDkBlue, 240);
   pushMatrix();
   float angle = random(-16, 16);
   float angle2 = random(-16, 16);

@@ -1,8 +1,6 @@
 import processing.pdf.*;
 
-color colBg = #E3DDD3;
 color colDkBlue = #366CA8;
-color colOrange = #EB6F48;
 PFont f;
 String words = "";
 float x = 30;
@@ -11,7 +9,7 @@ float y = 100;
 boolean pdfToggle = false;
 
 void setup() {
-  size(757, 542); //(757, 542)
+  size(757, 542, P3D); //(757, 542)
   setFont();
 }
 
