@@ -1,7 +1,6 @@
 boolean pdfToggle = false;
 float x1;
 float y1;
-int lastClick = 0;
 int strokeSize = 1;
 
 void setup() {
@@ -9,10 +8,11 @@ void setup() {
 }
 
 void draw() {
-  if (millis() - lastClick > 400) {
+}
+
+void mouseMoved() {
     x1 = mouseX;
     y1 = mouseY;
-  }
 }
 
 void mouseDragged() {

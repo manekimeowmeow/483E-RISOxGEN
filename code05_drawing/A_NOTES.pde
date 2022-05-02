@@ -21,3 +21,5 @@
 // realized it's bc x1 and y1 last update when the mouse is dragged (so it
 // doesn't update coords when the mouse is moved, unlesss it's dragged again)
 // added in timer so if there's been a pause over 400ms, it registers value of new posn
+
+// discovered mouseMove; replaced timer check w/ it https://processing.org/reference/mouseMoved_.html
