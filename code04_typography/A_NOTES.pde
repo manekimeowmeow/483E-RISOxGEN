@@ -1,6 +1,7 @@
 // generative typography
 /* 
 notes:
+font: basteleur by velvetyne type foundry!! rmb to mention in project
 inspo - https://fontsinuse.com/uses/44689/ekko-s-vriendenboekje 
 note: bg is actually arcs/bezier curves but looked to me like font initially so...
 need: large decorative typeface w/ swashes??

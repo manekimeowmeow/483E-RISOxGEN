@@ -12,11 +12,13 @@ void draw() {
 void mouseDragged() {
   stroke(0);
   line(x1, y1, mouseX, mouseY);
-  //x1 = mouseX;
-  //y1 = mouseY; // disabled is p interesting but unintended ??
+  x1 = mouseX;
+  y1 = mouseY; // disabled is p interesting but unintended ??
+  println("x1, y1, mouseX, mouseY: ",x1,y1,mouseX,mouseY);
 }
 
-void mouseReleased() {
+void mouseClicked() {
+  noStroke();
 }
 
 void keyTyped() {
