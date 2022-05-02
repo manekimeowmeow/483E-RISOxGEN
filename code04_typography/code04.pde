@@ -10,6 +10,7 @@ boolean pdfToggle = false;
 
 void setup() {
   size(757, 542, P3D); //(757, 542)
+  setFont();
 }
 
 void draw() {
@@ -21,11 +22,10 @@ void mouseClicked() {
 
 void keyTyped() {
   // ---- Add chars to string
-  words = words + key;
+  //words = words + key;
   // ---- Draw keystrokes
-  setFont();
   drawKey();
-  
+
   if (key == '1') {
     // ---- Toggle PDF recording
     keyTogglePDF();
@@ -34,4 +34,11 @@ void keyTyped() {
   if (key == 'x') {
     background(220);
   }
+
+
+  // probably adding circles later but worry about it after!!!!
+  //lights();
+  //rect(0, 0, 100, 100);
+  //fill(255, 255, 255, 50);
+  //sphere(50);
 }
