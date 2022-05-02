@@ -19,4 +19,5 @@ void startPDF() {
 void stopPDF() {
   endRecord();
   println("Ended PDF capture.");
+  save("sendhelp.png");
 }
