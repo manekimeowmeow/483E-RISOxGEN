@@ -23,3 +23,4 @@
 // added in timer so if there's been a pause over 400ms, it registers value of new posn
 
 // discovered mouseMove; replaced timer check w/ it https://processing.org/reference/mouseMoved_.html
+// ...found out about pmouseX, pmouseY.... making all the above redundant.... https://processing.org/reference/pmouseX.html

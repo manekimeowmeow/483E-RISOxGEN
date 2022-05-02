@@ -10,17 +10,9 @@ void setup() {
 void draw() {
 }
 
-void mouseMoved() {
-    x1 = mouseX;
-    y1 = mouseY;
-}
-
 void mouseDragged() {
   stroke(0);
-  line(x1, y1, mouseX, mouseY);
-  x1 = mouseX;
-  y1 = mouseY; // disabled is p interesting but unintended ??
-  println("x1, y1, mouseX, mouseY: ", x1, y1, mouseX, mouseY);
+  line(pmouseX, pmouseY, mouseX, mouseY);
 }
 
 void mouseClicked() {
