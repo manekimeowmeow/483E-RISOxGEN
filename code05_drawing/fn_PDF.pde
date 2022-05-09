@@ -13,11 +13,11 @@ void keyTogglePDF() {
 void startPDF() {
   println("Capturing PDF...");
   String fileName = year()+"-"+month()+"-"+day()+"_"+random(1000);
-  beginRaw(PDF, "EXPORT/"+fileName+".pdf");
+  beginRecord(PDF, "EXPORT/"+fileName+".pdf");
 }
 
 void stopPDF() {
-  endRaw();
+  endRecord();
   println("Ended PDF capture.");
   save("sendhelp.png");
 }
